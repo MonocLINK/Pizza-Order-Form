@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pizza Order Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Self CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark p-2">
+    <header>
+        <h1 class=" text-center font-weight-bolder headingbg">Pizza Order Form</h1>
+    </header>
+
+    <br>
+
+    <nav>
+        <!-- Nav Bar -->
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active greenbg font-weight-bolder" href="#pizzaTabContent">Pizza</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link whitebg font-weight-bolder" href="#delieveryTabContent">Delievery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link redbg font-weight-bolder" href="#orderTabContent">Order</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <div class="container">
+            <div class="tab-content">
+                <div id="pizzaTabContent" class="tab-pane active greenbg p-4 text-center">
+                    <h2>Customize Your Pizza</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <legend>Size</legend>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="pizzaSize" id="pizzaSizeSmall" value="Small" checked> Small &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="pizzaSize" id="pizzaSizeMedium" value="Medium"> Medium &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="pizzaSize" id="pizzaSizeLarge" value="Large"> Large &nbsp;
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <legend>Crust</legend>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="pizzaCrust" id="pizzaCrustThin" value="Thin" checked> Thin &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="pizzaCrust" id="pizzaCrustPan" value="Pan"> Pan &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="pizzaCrust" id="pizzaCrustGlutenFree" value="Gluten-Free"> Gluten-Free &nbsp;
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <legend>Toppings</legend>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaTopping" id="pizzaToppingOnion" > Onions &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaTopping" id="pizzaToppingPineapple" > Pineapple &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaTopping" id="pizzaToppingOlive" > Olives &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaTopping" id="pizzaToppingSpinach" > Spinach &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaTopping" id="pizzaToppingMushroom" > Mushrooms &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaTopping" id="pizzaToppingCheese" > Extra Cheese &nbsp;
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <legend>Meats</legend>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatPepperoni" > Pepperoni &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatSausage" > Sausage &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatSalami" > Salami &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatItalianSausage" > Italian Sausage &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatHamburger" > Hamburger &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatBacon" > Bacon &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatSteak" > Steak &nbsp;
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="pizzaMeat" id="pizzaMeatChicken" > Chicken &nbsp;
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <a class="btn btn-primary next">Next</a>
+                    </form>
+                </div>
+                <div id="delieveryTabContent" class="tab-pane whitebg p-4 text-center">
+                    <h2>Delievery Information</h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First Name" id="firstName">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last Name" id="lastName">
+                            </div>
+                            <div class="col">
+                                <input type="tel" class="form-control" placeholder="Phone" id="phoneNumber">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Street Address" id="streetAddress">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apt" id="apt">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="City" id="city">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="State" id="state">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Zip" id="zip">
+                            </div>
+                        </div>
+                        <br>
+                        <a class="btn btn-primary next text-white">Next</a>
+                    </form>
+                </div>
+                <div id="orderTabContent" class="tab-pane redbg p-4 text-center">
+                    <h2>Order Summary</h2>
+                    <div class="row">
+                        <div class="col text-left">
+                            <h4>Contact Details</h4>
+                            <p class="font-weight-bolder">Name: <span class="font-weight-normal" id="nameOutput"></span></p>
+                            <p class="font-weight-bolder">Address: <span class="font-weight-normal" id="addressOutput"></span></p>
+                            <p class="font-weight-bolder">Phone: <span class="font-weight-normal" id="phoneOutput"></span></p>
+                        </div>
+                        <div class="col text-center">
+                            <h4>Pizza Details</h4>
+                            <p class="font-weight-bolder">Size: <span class="font-weight-normal" id="sizeOutput"></span></p>
+                            <p class="font-weight-bolder">Crust: <span class="font-weight-normal" id="crustOutput"></span></p>
+                            <p class="font-weight-bolder">Number of Toppings: <span class="font-weight-normal" id="toppingOutput"></span></p>
+                            <p class="font-weight-bolder">Number of Meats: <span class="font-weight-normal" id="meatOutput"></span></p>
+                        </div>
+                        <div class="col text-right">
+                            <h4>Cost Details</h4>
+                            <p class="font-weight-bolder">Subtotal: <span class="font-weight-normal" id="subtotalOutput"></span></p>
+                            <p class="font-weight-bolder">Tax: <span class="font-weight-normal" id="taxOutput"></span></p>
+                            <p class="font-weight-bolder">Delievery: <span class="font-weight-normal" id="delieveryOutput"></span></p>
+                            <p class="font-weight-bolder">Grand Total: <span class="font-weight-normal" id="grandTotalOutput"></span></p>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary" id="placeOrder">Place Your Order</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then self JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

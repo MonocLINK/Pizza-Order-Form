@@ -1,0 +1,51 @@
+nav li .active {
+    background-color: transparent;
+    color: #212529 !important;
+}
+
+nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.3rem;
+}
+
+.greenbg {
+    background-color: #008c45 !important;
+    color: #f4f5f0;
+    border-color: #00572b;
+    border-style: solid;
+    border-radius: 25px !important;
+}
+
+.whitebg {
+    background-color: #f4f5f0 !important;
+    color: #212529;
+    border-color: #dde0d1;
+    border-style: solid;
+    border-radius: 25px !important;
+}
+
+.redbg {
+    background-color: #cd212a !important;
+    color: #f4f5f0;
+    border-color: #a21a21;
+    border-style: solid;
+    border-radius: 25px !important;
+}
+
+.headingbg {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 25px;
+}
+
+header h1,
+nav li {
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+
+fieldset {
+    border: 3px;
+}
