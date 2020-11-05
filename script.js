@@ -1,9 +1,8 @@
 $(document).ready(function() {
     // event handlers
-    $(".nav-link").click(showTab);
-    $(".next").click(nextTab);
-    $(".back").click(previousTab);
-    $("#placeOrder").click(outputResults);
+    $(".nav-link").click(showTab); // tab clicking
+    $(".next").click(nextTab); // next button
+    $("#placeOrder").click(outputResults); // submit button
 
     // show the tab that got clicked
     function showTab(event) {
@@ -11,14 +10,12 @@ $(document).ready(function() {
         $(this).tab("show");
     }
 
+    // next button
     function nextTab() {
         $('.nav-item > .active').parent().next('li').find('a').trigger('click');
     }
 
-    function previousTab() {
-        $('.nav-item > .active').prev('li').find('a').trigger('click');
-    }
-
+    // the beef of the program
     function outputResults() {
         // price vars
         var sizeSmallPrice = 7;
@@ -53,7 +50,7 @@ $(document).ready(function() {
         var zip = $("#zip").val();
         var finalAddress = streetAddress + " " + apt + " " + city + " " + state + " " + zip;
 
-        // math
+        // math for pricing
         finalToppingPrice = toppingPrice * numToppings;
         finalMeatPrice = meatPrice * numMeats;
 
