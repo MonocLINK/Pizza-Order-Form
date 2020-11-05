@@ -63,7 +63,7 @@ $(document).ready(function() {
         }
 
         subtotal = finalToppingPrice + finalMeatPrice + finalSizePrice;
-        grandTotal = (subtotal * tax) + delieveryFee;
+        grandTotal = subtotal + (subtotal * tax) + delieveryFee;
 
         // output
         $("#nameOutput").text(name);
